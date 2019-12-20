@@ -1,0 +1,128 @@
+{
+  "id": "9941f536-3abd-455a-a874-130b361fccb6",
+  "version": "2.0",
+  "name": "t1_tw_LargitData",
+  "url": "https://www.agoda.com",
+  "tests": [{
+    "id": "fdcbe899-9091-49d3-9852-4790e7d213e6",
+    "name": "Untitled",
+    "commands": [{
+      "id": "67959922-f1b4-4e5b-a9d8-0fe0ddd63932",
+      "comment": "",
+      "command": "open",
+      "target": "/zh-tw/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f20ff9f7-9898-42bd-9e17-ba8bdd96cd0c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1157x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ac8a4a4-bb63-4d5c-8ebf-b3ad4f7548c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SearchBoxTextEditor",
+      "targets": [
+        ["css=.SearchBoxTextEditor", "css:finder"],
+        ["xpath=//input[@value='台中市']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e3e9e00-8f7f-4e36-b7f6-f333a27120b2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.SearchBoxTextEditor",
+      "targets": [
+        ["css=.SearchBoxTextEditor", "css:finder"],
+        ["xpath=//input[@value='tai']", "xpath:attributes"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "tai"
+    }, {
+      "id": "c22a4ff4-a764-4a5e-b8c9-c9884bfc4831",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Suggestion:nth-child(1) .Suggestion__text",
+      "targets": [
+        ["css=.Suggestion:nth-child(1) .Suggestion__text", "css:finder"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div[5]/div/div/ul/li/ul/li/span[2]", "xpath:idRelative"],
+        ["xpath=//li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'台北市')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf0bc15e-aee1-42cd-a45c-367f077af30e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.DayPicker-Week:nth-child(1) > .DayPicker-Day--holiday",
+      "targets": [
+        ["css=.DayPicker-Week:nth-child(1) > .DayPicker-Day--holiday", "css:finder"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div[5]/div/div/div/div/div[2]/div[2]/div[3]/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd2a57b-2a1b-48ca-8048-61623d70a0d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.DayPicker-Day--checkOut > .DayPicker-Day__label",
+      "targets": [
+        ["css=.DayPicker-Day--checkOut > .DayPicker-Day__label", "css:finder"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div[5]/div/div/div/div/div[2]/div[2]/div[3]/div/div[5]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/div[5]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e20a8fc-a5ea-4600-ad12-497ec3ad79cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TravellerSegment__row > span",
+      "targets": [
+        ["css=.TravellerSegment__row > span", "css:finder"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/div[5]/div/div/div/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'單人旅遊')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4692686b-bcb0-4445-8a52-cab58150a6a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Searchbox__searchButton__text",
+      "targets": [
+        ["css=.Searchbox__searchButton__text", "css:finder"],
+        ["xpath=//div[@id='SearchBoxContainer']/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'搜尋')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34a65419-c856-4428-a972-e392b771f7a7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#hotel-6592915-container .InfoBox__Header",
+      "targets": [
+        ["css=#hotel-6592915-container .InfoBox__Header", "css:finder"],
+        ["xpath=//a[@id='hotel-6592915-container']/div/section/div[3]/header", "xpath:idRelative"],
+        ["xpath=//div[3]/header", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c1f202e-fda4-4619-8110-cd145794804a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fdcbe899-9091-49d3-9852-4790e7d213e6"]
+  }],
+  "urls": ["https://www.agoda.com/"],
+  "plugins": []
+}
